@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"mp4player\startup_stm32f407xx.o"
+"mp4player\main.o"
+"mp4player\gpio.o"
+"mp4player\freertos.o"
+"mp4player\usart.o"
+"mp4player\stm32f4xx_it.o"
+"mp4player\stm32f4xx_ll_gpio.o"
+"mp4player\stm32f4xx_ll_rcc.o"
+"mp4player\stm32f4xx_ll_utils.o"
+"mp4player\stm32f4xx_ll_exti.o"
+"mp4player\stm32f4xx_ll_usart.o"
+"mp4player\stm32f4xx_ll_dma.o"
+"mp4player\system_stm32f4xx.o"
+"mp4player\croutine.o"
+"mp4player\event_groups.o"
+"mp4player\list.o"
+"mp4player\queue.o"
+"mp4player\stream_buffer.o"
+"mp4player\tasks.o"
+"mp4player\timers.o"
+"mp4player\cmsis_os2.o"
+"mp4player\heap_4.o"
+"mp4player\port.o"
+--library_type=microlib --strict --scatter "MP4Player\MP4Player.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MP4Player.map" -o MP4Player\MP4Player.axf
