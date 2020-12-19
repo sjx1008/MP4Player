@@ -419,6 +419,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>App</GroupName>
+          <Files>
+            <File>
+              <FileName>App_key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HardWare\App_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>App_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HardWare\App_led.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>Drivers/STM32F4xx_HAL_Driver</GroupName>
           <Files>
             <File>

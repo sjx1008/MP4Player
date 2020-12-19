@@ -5,6 +5,8 @@
 "mp4player\freertos.o"
 "mp4player\usart.o"
 "mp4player\stm32f4xx_it.o"
+"mp4player\app_key.o"
+"mp4player\app_led.o"
 "mp4player\stm32f4xx_ll_gpio.o"
 "mp4player\stm32f4xx_ll_rcc.o"
 "mp4player\stm32f4xx_ll_utils.o"

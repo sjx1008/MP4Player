@@ -46,20 +46,11 @@
 
 /* USER CODE BEGIN PV */
 
-#define START_TASK_PRIO		1 //任务优先�?
-#define START_STK_SIZE 		128  //任务堆栈大小	
-TaskHandle_t StartTask_Handler;//任务句柄
-void start_task(void *pvParameters);//任务函数
+#define START_TASK_PRIO		1 //���ȼ�
+#define START_STK_SIZE 		128  //��ջ��С
+TaskHandle_t StartTask_Handler;//���
+void start_task(void *pvParameters);//����
 
-#define LED1_TASK_PRIO		3
-#define LED1_STK_SIZE 		50  
-TaskHandle_t LED1Task_Handler;
-void led1_task(void *pvParameters);
-
-#define KEY1_TASK_PRIO		2
-#define KEY1_STK_SIZE 		50  
-TaskHandle_t KEY1Task_Handler;
-void KEY1_task(void *pvParameters);
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -123,7 +114,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	xTaskCreate(start_task,"start_task",START_STK_SIZE,NULL,START_TASK_PRIO,&StartTask_Handler);
-  vTaskStartScheduler();          //�?启任务调�?
+  vTaskStartScheduler();         //Start scheduler
 	while (1)
   {
     /* USER CODE END WHILE */
@@ -177,34 +168,12 @@ void SystemClock_Config(void)
 void start_task(void *pvParameters)
 {
 	taskENTER_CRITICAL();
-	//创建LED1任务
-	xTaskCreate(led1_task,"led1_task",LED1_STK_SIZE,NULL,LED1_TASK_PRIO,&LED1Task_Handler);
-	//创建按键任务
-	xTaskCreate(KEY1_task,"KEY1_task",KEY1_STK_SIZE,NULL,KEY1_TASK_PRIO,&KEY1Task_Handler);
-	
+
+	Led_Init();
+	Key_Init();
 	
 	vTaskDelete(StartTask_Handler); //删除�?始任�?
   taskEXIT_CRITICAL();            //�?出临界区
-}
-
-void led1_task(void *pvParameters)
-{
-	printf("led1\n");
-	while(1)
-	{
-		vTaskDelay(500);
-		LL_GPIO_SetOutputPin(GPIOF, LL_GPIO_PIN_9 | LL_GPIO_PIN_10);
-		vTaskDelay(500);
-		LL_GPIO_ResetOutputPin(GPIOF, LL_GPIO_PIN_9 | LL_GPIO_PIN_10);
-	}
-}
-
-void KEY1_task(void *pvParameters)
-{
-	while(1)
-	{
-		
-	}
 }
 
 /* USER CODE END 4 */

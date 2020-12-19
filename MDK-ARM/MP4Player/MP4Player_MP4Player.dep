@@ -1,6 +1,6 @@
 Dependencies for Project 'MP4Player', Target 'MP4Player': (DO NOT MODIFY !)
 F (startup_stm32f407xx.s)(0x5FDD5B8E)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\Core\Inc-I.\RTE\_MP4Player-IE:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o mp4player\startup_stm32f407xx.o --depend mp4player\startup_stm32f407xx.d)
-F (../Core/Src/main.c)(0x5FDD6E68)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\HardWare-I.\RTE\_MP4Player-IE:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F407xx-o mp4player\main.o --omf_browse mp4player\main.crf --depend mp4player\main.d)
+F (../Core/Src/main.c)(0x5FDDB2B1)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\HardWare-I.\RTE\_MP4Player-IE:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F407xx-o mp4player\main.o --omf_browse mp4player\main.crf --depend mp4player\main.d)
 I (../Core/Inc/main.h)(0x5FDD5B8C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x5FA55943)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5FA558F6)
@@ -35,8 +35,10 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5FA558FD)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5FA558FD)
 I (../Core/Inc/usart.h)(0x5FDD66F5)
 I (../Core/Inc/gpio.h)(0x5FDD5B8A)
-I (..\HardWare\Include.h)(0x5FDD608A)
+I (..\HardWare\Include.h)(0x5FDDAFD5)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\HardWare\App_key.h)(0x5FDDAFD5)
+I (..\HardWare\App_led.h)(0x5FDDB0C2)
 F (../Core/Src/gpio.c)(0x5FDD5B8A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\HardWare-I.\RTE\_MP4Player-IE:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F407xx-o mp4player\gpio.o --omf_browse mp4player\gpio.crf --depend mp4player\gpio.d)
 I (../Core/Inc/gpio.h)(0x5FDD5B8A)
 I (../Core/Inc/main.h)(0x5FDD5B8C)
@@ -147,6 +149,80 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5FA558FD)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5FA558FD)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5FA558FD)
+F (..\HardWare\App_key.c)(0x5FDDB2B1)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\HardWare-I.\RTE\_MP4Player-IE:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F407xx-o mp4player\app_key.o --omf_browse mp4player\app_key.crf --depend mp4player\app_key.d)
+I (..\HardWare\App_key.h)(0x5FDDAFD5)
+I (..\HardWare\Include.h)(0x5FDDAFD5)
+I (../Core/Inc/main.h)(0x5FDD5B8C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x5FA55943)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5FA558F6)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5FA558F6)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5FA558F9)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5FA558F9)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5FA558F9)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5FA558F9)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5FA558F9)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5FA558F6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x5FA55943)
+I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5FA558FD)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FDD5B8B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5FA558FD)
+I (..\HardWare\App_led.h)(0x5FDDB0C2)
+F (..\HardWare\App_led.c)(0x5FDDB0C2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\HardWare-I.\RTE\_MP4Player-IE:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F407xx-o mp4player\app_led.o --omf_browse mp4player\app_led.crf --depend mp4player\app_led.d)
+I (..\HardWare\App_led.h)(0x5FDDB0C2)
+I (..\HardWare\Include.h)(0x5FDDAFD5)
+I (../Core/Inc/main.h)(0x5FDD5B8C)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x5FA55943)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5FA558F6)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5FA558F6)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5FA558F9)
+I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5FA558F9)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5FA558F9)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5FA558F9)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5FA558F9)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5FA558F6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h)(0x5FA55943)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x5FA55943)
+I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5FA558FD)
+I (E:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FDD5B8B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5FA558FD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5FA558FD)
+I (..\HardWare\App_key.h)(0x5FDDAFD5)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c)(0x5FA55943)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ..\HardWare-I.\RTE\_MP4Player-IE:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F407xx-o mp4player\stm32f4xx_ll_gpio.o --omf_browse mp4player\stm32f4xx_ll_gpio.crf --depend mp4player\stm32f4xx_ll_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x5FA55943)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5FA558F6)

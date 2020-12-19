@@ -35,3 +35,6 @@ mp4player\main.o: ../Core/Inc/usart.h
 mp4player\main.o: ../Core/Inc/gpio.h
 mp4player\main.o: ..\HardWare\Include.h
 mp4player\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+mp4player\main.o: ..\HardWare\App_key.h
+mp4player\main.o: ..\HardWare\Include.h
+mp4player\main.o: ..\HardWare\App_led.h
