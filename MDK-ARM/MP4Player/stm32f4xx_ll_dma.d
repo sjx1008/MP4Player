@@ -1,0 +1,12 @@
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/CMSIS/Include/core_cm4.h
+mp4player\stm32f4xx_ll_dma.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/CMSIS/Include/cmsis_version.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+mp4player\stm32f4xx_ll_dma.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h

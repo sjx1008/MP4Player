@@ -1,0 +1,16 @@
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+mp4player\tasks.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+mp4player\tasks.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+mp4player\tasks.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+mp4player\tasks.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+mp4player\tasks.o: ../Core/Inc/FreeRTOSConfig.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+mp4player\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h
