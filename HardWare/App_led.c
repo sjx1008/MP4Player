@@ -17,7 +17,7 @@ void led1_task(void *pvParameters)
 	while(1)
 	{
 		vTaskDelay(500);
-		LL_GPIO_SetOutputPin(GPIOF, LL_GPIO_PIN_9 | LL_GPIO_PIN_10);
+		LL_GPIO_SetOutputPin(GPIOF, LL_GPIO_PIN_9 /*| LL_GPIO_PIN_10*/);
 		vTaskDelay(500);
 		LL_GPIO_ResetOutputPin(GPIOF, LL_GPIO_PIN_9 | LL_GPIO_PIN_10);
 	}

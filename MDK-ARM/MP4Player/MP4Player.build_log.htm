@@ -27,12 +27,28 @@ Project File Date:  12/19/2020
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'MP4Player'
-compiling main.c...
 compiling App_key.c...
+..\HardWare\App_key.c(34): warning:  #177-D: variable "key_longtime"  was declared but never referenced
+  	static  uint8_t   key_longtime=0;//长按时间累积寄存器1
+..\HardWare\App_key.c(35): warning:  #177-D: variable "key_longtime1"  was declared but never referenced
+  	static  uint8_t   key_longtime1=0;//长按时间累积寄存器2
+..\HardWare\App_key.c(36): warning:  #177-D: variable "key_super_longtime"  was declared but never referenced
+  	static  uint8_t   key_super_longtime=0;	//超长按时间累积寄存器
+..\HardWare\App_key.c(37): warning:  #177-D: variable "F_longkey"  was declared but never referenced
+  	static  uint8_t   F_longkey=0;//长按
+..\HardWare\App_key.c(38): warning:  #177-D: variable "F_super_longkey"  was declared but never referenced
+  	static  uint8_t   F_super_longkey=0;//超长按
+..\HardWare\App_key.c(40): warning:  #177-D: variable "Key_Hda"  was declared but never referenced
+  	static 	uint8_t 	 Key_Hda;
+..\HardWare\App_key.c(41): warning:  #550-D: variable "KEY_data"  was set but never used
+  	static	uint8_t 	 KEY_data=0;
+..\HardWare\App_key.c: 7 warnings, 0 errors
+compiling main.c...
+compiling App_led.c...
 linking...
-Program Size: Code=26644 RO-data=504 RW-data=144 ZI-data=19672  
+Program Size: Code=26960 RO-data=504 RW-data=160 ZI-data=19680  
 FromELF: creating hex file...
-"MP4Player\MP4Player.axf" - 0 Error(s), 0 Warning(s).
+"MP4Player\MP4Player.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,7 +71,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.1.1
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>
